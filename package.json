@@ -1,14 +1,29 @@
 {
   "name": "min-find",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "simple Sizzle like query selector",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "browserify test | poor -b ie:6..8,chrome",
+    "readme": "pretty-readme > readme.md"
   },
-  "author": "",
+  "author": "chunpu",
   "license": "ISC",
   "devDependencies": {
     "poor": "^1.1.3"
-  }
+  },
+  "dependencies": {
+    "poor": "^1.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chunpu/min-find.git"
+  },
+  "keywords": [
+    "selector"
+  ],
+  "bugs": {
+    "url": "https://github.com/chunpu/min-find/issues"
+  },
+  "homepage": "https://github.com/chunpu/min-find"
 }

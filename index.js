@@ -27,9 +27,10 @@ function find(selector, box) {
 					return [elem]
 				}
 			} else {
-				// try query select, it will also panic when '#100000'
+				// complex css select, not id or tag
+				var fn = exports.custom || query
 				try {
-					nodes = box.querySelectorAll(selector)
+					nodes = fn(selector, box)
 				} catch (ignore) {}
 			}
 		}
@@ -41,4 +42,9 @@ function find(selector, box) {
 		}
 	}
 	return ret
+}
+
+function query(selector, box) {
+	// it will also panic with invalid selector like '#1234'
+	return box.querySelectorAll(selector)
 }
