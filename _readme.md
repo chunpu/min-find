@@ -2,7 +2,7 @@ Usage
 ---
 
 ```js
-var find = require('find')
+var find = require('min-find')
 var elements = find(selector [, containerElement])
 ```
 
