@@ -6,11 +6,11 @@ module.exports = exports = find
 
 var isValid = /^[-\w]+$/
 
-var root = document
+var doc = global.document
 
 // always return array
 function find(selector, box) {
-	box = box || root
+	box = box || doc
 	var ret = []
 	var nodes
 	if (selector && box.getElementsByTagName) {
@@ -20,9 +20,9 @@ function find(selector, box) {
 			nodes = box.getElementsByTagName(selector)
 		} else {
 			var id = selector.substr(1)
-			if (root == box && '#' == selector.charAt(0) && isValid.test(id)) {
+			if (doc == box && '#' == selector.charAt(0) && isValid.test(id)) {
 				// is id and from document
-				var elem = root.getElementById(id)
+				var elem = doc.getElementById(id)
 				if (elem) {
 					return [elem]
 				}

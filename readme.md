@@ -4,6 +4,14 @@ min-find
 [![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][downloads-url]
+[![Dependency Status][david-image]][david-url]
+[npm-image]: https://img.shields.io/npm/v/min-find.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/min-find
+[downloads-image]: http://img.shields.io/npm/dm/min-find.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/min-find
+[david-image]: http://img.shields.io/david/chunpu/min-find.svg?style=flat-square
+[david-url]: https://david-dm.org/chunpu/min-find
+
 
 simple Sizzle like query selector
 
@@ -11,7 +19,7 @@ Installation
 ---
 
 ```sh
-npm install min-find
+npm i min-find
 ```
 
 Usage
@@ -49,11 +57,9 @@ find.custom = Sizzle
 License
 ---
 
-ISC
+[![License][license-image]][license-url]
 
-[npm-image]: https://img.shields.io/npm/v/min-find.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/min-find
 [travis-image]: https://img.shields.io/travis/chunpu/min-find.svg?style=flat-square
 [travis-url]: https://travis-ci.org/chunpu/min-find
-[downloads-image]: http://img.shields.io/npm/dm/min-find.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/min-find
+[license-image]: http://img.shields.io/npm/l/min-find.svg?style=flat-square
+[license-url]: #
